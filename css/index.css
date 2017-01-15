@@ -1,0 +1,616 @@
+html, body, .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide1, .slide2, .slide3, .slide4{
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.slide1 img{
+    opacity: 0;
+    position: absolute;
+}
+.slide1 p{
+    opacity: 0;
+}
+
+.bg2 {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+
+    width: 2.32rem;
+    height: 5.02rem;
+    left: .1rem;
+    top: 1rem;
+
+
+}
+.page2 {
+    width: 2.02rem;
+    height: 4.4rem;
+    left: 1.8rem;
+    top: 1.2rem;
+
+}
+
+
+.page3 {
+    width: 2.32rem;
+    height: 5.02rem;
+    left: 3rem;
+    top: 1.8rem;
+
+}
+
+.page4 {
+    width: 2.08rem;
+    height: 4.52rem;
+    left: 4.7rem;
+    top: 1.2rem;
+     }
+
+
+.slide1 p {
+    color: #fff;
+    font-size: .6rem;
+    font-weight: 900;
+
+
+
+}
+
+.ge {
+    position: absolute;
+    left: 1.4rem;
+    top: 2.6rem;
+
+}
+
+.ren {
+    position: absolute;
+    left: 2.3rem;
+    top: 3.44rem;
+
+
+}
+
+.jian {
+    position: absolute;
+    left: 3.6rem;
+    top: 3rem;
+
+}
+
+.lii {
+    position: absolute;
+    left: 4.8rem;
+    top: 3.7rem;
+
+}
+#page1 img{
+    opacity: 1;
+}
+#page1 p{
+    opacity: 1;
+}
+#page1 .page1{
+    animation: bounceInLeft 1s 1 both;
+}
+#page1 .page2{
+    animation: bounceInDown 1s 1 .3s both;
+}
+#page1 .page3{
+    animation: fadeInDown 1s 1 .6s both;
+}
+#page1 .page4{
+    animation: bounceInRight 1s 1 .9s both;
+}
+#page1.slide1 p{
+    animation: lightSpeedIn 1s 1 1.2s both;
+
+}
+
+
+.slide1 .swiperPerson {
+    width: 5.814rem;
+    height: 1.506rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 3rem;
+}
+/*
+#page1 .slide1 .swiperPerson{
+    animation: move 1s 1 ease;
+}
+*/
+
+.slide2 img{
+    opacity: 0;
+}
+.slide2 div{
+    opacity: 0;
+}
+
+.page5 {
+     position: absolute;
+     width: 3.8rem;
+     height: 1.4rem;
+      left: .69rem;
+      top: 1.2rem;
+}
+.page5 img{
+     width: 100%;
+     height: 100%;
+}
+
+.info {
+      position: absolute;
+      top: 1.8rem;
+    left: 1.71rem;
+    font-size: .52rem;
+      color: #000;
+    line-height: .7rem;
+}
+.name, .sex, .address, .tel, .age{
+     position: absolute;
+      top: 1.2rem;
+      left: 2rem;
+     font-size: .4rem;
+    line-height: .6rem;
+     color: #333;
+}
+.name{
+     top:3rem;
+     left: 1.71rem;
+}
+.sex{
+      top:4rem;
+      left: 1.71rem;
+}
+.age{
+      top: 5rem;
+      left: 1.71rem;
+}
+.tel{
+      top: 6rem;
+      left: 1.71rem;
+
+}
+.address{
+     top: 7rem;
+      left: 1.71rem;
+}
+.page6{
+    position: absolute;
+    width: 4rem;
+    height: 1.6rem;
+    top:7rem;
+    left: 1.7rem;
+}
+#page2 img{
+    opacity: 1;
+}
+#page2 div{
+    opacity: 1;
+}
+#page2 .page5 {
+    animation: bounceInRight 1s 1  both;
+}
+#page2 .name{
+    animation: bounceInLeft 1s 1 0.3s  both;
+}
+#page2 .sex{
+    animation: bounceInLeft 1s 1 0.4s  both;
+}
+#page2 .age{
+    animation: bounceInLeft 1s 1 0.5s  both;
+}
+#page2 .tel{
+    animation: bounceInLeft 1s 1 0.6s  both;
+}
+#page2 .address {
+    animation: bounceInLeft 1s 1 0.7s  both;
+}
+#page2 .page6 {
+    animation: bounceInLeft 1s 1 0.9s both;
+}
+.slide3 img {
+     opacity: 0;
+     position: absolute;
+}
+.slide3 img{
+    opacity: 0;
+}
+.slide3 span {
+    opacity: 0;
+}
+.slide3 ul {
+    opacity: 0;
+}
+.Skill{
+      position: absolute;
+      font-size: .4rem;
+      color: #333;
+      font-weight: 900;
+      left: 1.4rem;
+     top: .92rem;
+}
+.page7 {
+     position: absolute;
+     width: 3.6rem;
+     height: .46rem;
+     top: 1.5rem;
+     left: 1rem;
+}
+.page8{
+   position: absolute;
+     width: 1.5rem;
+     height: 2.5rem;
+      top: 0.4rem;
+    left: 3.3rem;
+}
+.skill1 span{
+     display: inline-block;
+    position: absolute;
+     font-size: .32rem;
+     line-height: .36rem;
+     font-weight: 900;
+     color: #666;
+     top: 4.5rem;
+     left: .5rem;
+}
+.skill1 img{
+     position: absolute;
+     top: 4.25rem;
+      left: 1.3rem;
+     width: .8rem;
+     height: .9rem;
+}
+.skill1 ul{
+     position: absolute;
+    top: 4.5rem;
+    left: 1.8rem;
+}
+.skill1 ul li{
+     float: left;
+     width: .4rem;
+     height: .4rem;
+     background: rgba(0,0,0,.6);
+     border-radius: 50%;
+     margin: 0 .2rem;
+
+}
+.skill2 span{
+    display: inline-block;
+    position: absolute;
+    font-size: .32rem;
+    line-height: .36rem;
+    font-weight: 900;
+    color: #666;
+    top: 5.5rem;
+    left: .5rem;
+}
+.skill2 img{
+    position: absolute;
+    top: 5.25rem;
+    left: 1.3rem;
+    width: .8rem;
+    height: .9rem;
+}
+.skill2 ul{
+    position: absolute;
+    top: 5.5rem;
+    left: 1.8rem;
+}
+.skill2 ul li{
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    margin: 0 .2rem;
+
+}
+.skill3 span{
+    display: inline-block;
+    position: absolute;
+    font-size: .32rem;
+    line-height: .36rem;
+    font-weight: 900;
+    color: #666;
+    top: 6.5rem;
+    left: .5rem;
+}
+.skill3 img{
+    position: absolute;
+    top: 6.25rem;
+    left:1.3rem;
+    width: .8rem;
+    height: .9rem;
+}
+.skill3 ul{
+    position: absolute;
+    top: 6.5rem;
+    left: 1.8rem;
+}
+.skill3 ul li{
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    margin: 0 .2rem;
+
+}
+.skill4 span{
+    display: inline-block;
+    position: absolute;
+    font-size: .32rem;
+    line-height: .36rem;
+    font-weight: 900;
+    color: #666;
+    top: 7.5rem;
+    left: .5rem;
+}
+.skill4 img{
+    position: absolute;
+    top: 7.25rem;
+    left: 1.3rem;
+    width: .8rem;
+    height: .9rem;
+}
+.skill4 ul{
+    position: absolute;
+    top: 7.5rem;
+    left: 1.8rem;
+}
+.skill4 ul li{
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    margin: 0 .2rem;
+
+}
+.skill5 span{
+    display: inline-block;
+    position: absolute;
+    font-size: .32rem;
+    line-height: .36rem;
+    font-weight: 900;
+    color: #666;
+    top: 8.5rem;
+    left: .5rem;
+}
+.skill5 img{
+    position: absolute;
+    top: 8.25rem;
+    left: 1.3rem;
+    width: .8rem;
+    height: .9rem;
+}
+.skill5 ul{
+    position: absolute;
+    top: 8.5rem;
+    left: 1.8rem;
+}
+.skill5 ul li{
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    margin: 0 .2rem;
+
+}
+#page3 img{
+    opacity: 1;
+}
+#page3 span {
+    opacity: 1;
+}
+#page3 ul {
+    opacity: 1;
+}
+#page3 .page7 {
+    animation: bounceInLeft 1s 1  both;
+}
+#page3 .page8 {
+    animation: bounceInLeft 1s 1 0.3s both;
+}
+#page3 .Skill {
+    animation : zoomInDown 1s 1 0.6s both ;
+}
+#page3 span {
+    animation : zoomInDown 1s 1 0.9s both ;
+}
+#page3 img {
+     animation: zoomInDown 1s 1 0.9s both;
+}
+
+#page3  ul {
+    animation: zoomInDown 1s 1 1.2s both;
+}
+.slide4 div{
+     opacity: 0;
+}
+.slide4 img{
+    opacity: 0;
+}
+.lanup {
+     position: absolute;
+      width: 2rem;
+      height: .2rem;
+      left: 2.8rem;
+       top: 2.4rem;
+}
+.landown {
+     position: absolute;
+     width: 2rem;
+     height: .6rem;
+     left: .8rem;
+     top: 1.2rem;
+}
+.rate{
+     position: absolute;
+      left: 1.8rem;
+     top: 1.5rem;
+       color: #333;
+       font-size: .5rem;
+       line-height: .8rem;
+
+}
+.ball1 {
+     position: absolute;
+     left: .5rem;
+     top: 4rem;
+
+
+}
+.ball1 img,.ball2 img ,.ball3 img ,.ball4 img ,.ball5 img{
+    opacity: 0;
+     width: 1.82rem;
+    height: 1.7rem;
+}
+.ball1 span,.ball2 span ,.ball3 span ,.ball4 span ,.ball5 span {
+
+    position: absolute;
+    left: .15rem;
+    top: .1rem;
+    color: #fff;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: .5rem;
+    text-align: center;
+    line-height: 1.4rem;
+
+}
+.ball1 span{
+      left:.4rem;
+      top: .4rem;
+}
+.ball1 img {
+      width: 2.2rem;
+     height: 2.2rem;
+}
+.ball2 {
+    position: absolute;
+    left: 2.2rem;
+    top: 6rem;
+}
+.ball3{
+    position: absolute;
+    left: 1.2rem;
+    top: 8rem;
+}
+.ball3 span{
+     left: .6rem;
+     top: .6rem;
+}
+.ball3 img {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.ball4{
+    position: absolute;
+    left: 3.3rem;
+    top: 7.2rem;
+}
+.ball5{
+    position: absolute;
+    left: 3.4rem;
+    top: 3.5rem;
+}
+.ball5 span{
+    left: .6rem;
+    top: .6rem;
+}
+.ball5 img {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+#page4 div{
+    opacity: 1;
+
+}
+#page4 img{
+     opacity: 1;
+}
+#page4 .landown {
+    animation: bounceInLeft 1s 1  both;
+}
+#page4 .lanup {
+    animation: bounceInRight 1s 1 .3s  both;
+}
+#page4 .rate {
+    animation: bounceInDown 1s 1 .6s  both;
+}
+#page4 .ball{
+    animation: zoomIn 1s infinite .9s both;
+}
+#page4 .ball span{
+      z-index: 10;
+     display: block;
+}
+.music {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url("../audio/music.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    z-index: 1111;
+    opacity: 0;
+}
+
+.musicCur {
+    animation: move 1s infinite linear both;
+}
+
+.swiperPerson {
+    _animation: move 1s infinite linear both;
+}
+
+@keyframes fade {
+    0% {
+
+    }
+
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW / desW * 100 + "px";
+    </script>
+</head>
+<body>
+<ariticle class="main">
+    <div class="music"></div>
+    <audio src="audio/beyondmp3" preload="none" loop id="beyond"></audio>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <img src="img/bg2.png" alt="" class="bg2">
+                <img src="img/1.png" alt="" class="page1">
+                <img src="img/2.png" alt="" class="page2">
+                <img src="img/3.png" alt="" class="page3">
+                <img src="img/4.png" alt="" class="page4">
+                  <p class="ge word" >个</p>
+                  <p class="ren word">人</p>
+                  <p class="jian word">简</p>
+                  <p class="lii word">历</p>
+            </div>
+            <div class="swiper-slide slide2">
+                <img src="img/bg2.png" alt="" class="bg2">
+                <img src="img/5.png" alt="" class="page5">
+                  <div class="info">基本信息</div>
+                   <div class="name">姓名:魏帅林</div>
+                   <div class="sex">性别:男</div>
+                   <div class="age">年龄:25</div>
+                   <div class="tel">手机号:13717580124</div>
+                   <div class="address">地址:北京</div>
+                <img src="img/6.png" alt="" class="page6">
+            </div>
+            <div class="swiper-slide slide3">
+                <img src="img/bg2.png" alt="" class="bg2">
+                <div class=" Skill">掌握技能</div>
+                <img src="img/7.png" alt="" class="page7">
+                <img src="img/8.png" alt="" class="page8">
+                <div class="skill1">
+                <span>HTML</span>
+                <img src="img/9.png" alt="">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+                <div class="skill2">
+                <span>HTML</span>
+                <img src="img/9.png" alt="">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+                <div class="skill3">
+                    <span>HTML</span>
+                    <img src="img/9.png" alt="">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="skill4">
+                    <span>HTML</span>
+                    <img src="img/9.png" alt="">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="skill5">
+                    <span>HTML</span>
+                    <img src="img/9.png" alt="">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+             <div class="swiper-slide slide4">
+                 <img src="img/bg2.png" alt="" class="bg2">
+
+                 <img src="img/lanup.png" alt="" class="lanup">
+                 <img src="img/landown.png" alt="" class="landown">
+                  <div class="rate">
+                      自我评价
+                  </div>
+                  <div class="ball1 ball">
+                      <img src="img/ball1.png" alt="">
+                      <span>开朗</span>
+                  </div>
+                 <div class="ball2 ball">
+                     <img src="img/ball2.png" alt="">
+                     <span>开朗</span>
+                 </div>
+                 <div class="ball3 ball">
+                     <img src="img/ball3.png" alt="">
+                     <span>开朗</span>
+                 </div>
+                 <div class="ball4 ball">
+                     <img src="img/ball4.png" alt="">
+                     <span>开朗</span>
+                 </div>
+                 <div class="ball5 ball">
+                     <img src="img/ball1.png" alt="">
+                      <span>开朗</span>
+                 </div>
+   
+             </div>
+
+        </div>
+    </div>
+</ariticle>
+
+
+</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        loop: true, /*循环模式*/
+        onTransitionEnd: function (swiper) {
+            var curIndex = swiper.activeIndex;
+            var slides = swiper.slides;
+            console.log(slides.length);
+            [].forEach.call(slides, function (item, index) {
+                item.id = "";
+                if (index == curIndex) {
+                    switch (index) {
+                        case 0:
+                            item.id = "page" + (slides.length - 2);
+                            break;
+                        case slides.length - 1:
+                            item.id = "page1";
+                            break;
+                        default :
+                            item.id = "page" + curIndex
+                    }
+
+                }
+            })
+        }
+    });
+    var music = document.querySelector(".music");
+    var beyond = document.querySelector("#beyond");
+    window.setTimeout(function () {
+        beyond.play();//播放
+        /*边缓冲边播放*/
+        beyond.addEventListener("canplay", function () {
+            music.style.opacity = "1";
+            music.className = "music musicCur";
+        }, false)
+    }, 1000)
+
+    music.addEventListener("click", function () {
+        //beyond.paused ->true停止  false 播放
+        if (beyond.paused) {
+            beyond.play();//播放
+            music.className = "music musicCur";
+        } else {
+            beyond.pause();//停止
+            music.className = "music";
+        }
+    }, false)
+</script>
